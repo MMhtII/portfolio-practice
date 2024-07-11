@@ -11,9 +11,9 @@
         scroll-snap-type: y mandatory;
 
         scrollbar-width: none; //for firefox
-        &::-webkit-scrollbar {
-            display: none;
-        } // for other browsers edge,safari, chrome, ...
+        // &::-webkit-scrollbar {
+        //     display: none;
+        // } // for other browsers edge,safari, chrome, ...
 
         > * {
             height: 100vw;

@@ -6,12 +6,15 @@
         background-color: lightsalmon;
         position: relative;
         top: 70px;
+        
         scroll-behavior: smooth;
         scroll-snap-type: y mandatory;
+
         scrollbar-width: none; //for firefox
         &::-webkit-scrollbar {
             display: none;
         } // for other browsers edge,safari, chrome, ...
+
         > * {
             height: 100vw;
             height: calc(100vh - 70px);

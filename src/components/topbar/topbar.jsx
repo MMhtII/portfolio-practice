@@ -3,9 +3,9 @@ import "./topbar.scss";
 import Mail from "@mui/icons-material/Mail";
 import { Person } from "@mui/icons-material";
 
-export default function topbar() {
+export default function topbar({ menuOpen, setMenuOpen }) {
   return (
-    <div className="topbar">
+    <div className={"topbar " + (menuOpen && "active")}>
       <div className="wrapper">
         <div className="left">
           <a href="#intro" className="logo">
@@ -21,14 +21,12 @@ export default function topbar() {
             <Mail className="icon" />
             <span>Mohammad Safarov@ gmail.com</span>
           </div>
-
-         
         </div>
         <div className="right">
-          <div className="hamburger">
-            <span className="line1" ></span>
-            <span className="line2" ></span>
-            <span className="line3" ></span>
+          <div className="hamburger" onClick={()=>setMenuOpen(!menuOpen)} >
+            <span className="line1"></span>
+            <span className="line2"></span>
+            <span className="line3"></span>
           </div>
         </div>
       </div>

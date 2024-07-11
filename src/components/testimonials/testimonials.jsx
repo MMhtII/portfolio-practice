@@ -1,5 +1,5 @@
 import "./testimonials.scss"
 
 export default function testimonials() {
-  return <div className="testimonial">testimonials</div>;
+  return <div className="testimonial"></div>;
 }

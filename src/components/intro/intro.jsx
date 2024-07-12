@@ -10,7 +10,7 @@ function Intro() {
       showCursor: true,
       backDelay: 1500,
       backSpeed: 60,
-      strings: ["Frontend Developer", "Ui/UX Designer", "Content Maker"],
+      strings: ["Frontend Developer", "UI/UX Designer", "Content Maker"],
     });
   }, []);
 
